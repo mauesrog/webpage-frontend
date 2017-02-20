@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+
+const RESUME = 'https://drive.google.com/open?id=0BxSh45n-GCwfSEJVbVJiSWp1Y3M';
+
+class Menu extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    };
+  }
+
+  render() {
+    return (
+      <div id="menu-wrapper">
+        <div id="menu" className={this.props.toggled ? 'toggled' : 'normal'}>
+          <a href="#portfolio-placeholder" onClick={this.props.toggleMenu}>Portfolio</a>
+          <a href="#contact-me-placeholder" onClick={this.props.toggleMenu}>Contact me</a>
+          <a href={RESUME} onClick={this.props.toggleMenu} target="_blank">Resume</a>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Menu;
