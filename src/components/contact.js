@@ -58,7 +58,7 @@ class Menu extends Component {
     }
 
     for (const key of Object.keys(this.state)) {
-      if (!(key === id || key === 'formClass' || 'warningMessage' || key.includes('Data'))) {
+      if (!(key === id || key === 'formClass' || key === 'warningMessage' || key.includes('Data'))) {
         state[key] = 'normal';
       }
     }
