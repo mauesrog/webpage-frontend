@@ -1,30 +1,15 @@
-$hover-color: rgb(190,175,80);
+$hover-color: rgb(19,175,80);
 
-@font-face {
-    font-family: "Aller";
-    src: url("fonts/Aller_Bd.ttf") format("truetype"),
-         url("fonts/Aller_BdIt.ttf") format("truetype"),
-         url("fonts/Aller_It.ttf") format("truetype"),
-         url("fonts/Aller_Lt.ttf") format("truetype"),
-         url("fonts/Aller_LtIt.ttf") format("truetype"),
-         url("fonts/Aller_Rg.ttf") format("truetype"),
-         url("fonts/AllerDisplay.ttf") format("truetype"),
-         url("fonts/Aller_Bd.woff") format("woff"),
-              url("fonts/Aller_BdIt.woff") format("woff"),
-              url("fonts/Aller_It.woff") format("woff"),
-              url("fonts/Aller_Lt.woff") format("woff"),
-              url("fonts/Aller_LtIt.woff") format("woff"),
-              url("fonts/Aller_Rg.woff") format("woff"),
-              url("fonts/AllerDisplay.woff") format("woff");
-}
+@import "fonts/fonts.css";
 
 .logoo:hover {
   color: $hover-color;
 }
 
+
 body {
-  font-family: "Aller" !important;
-  font-size: 57px;
+  font-family: 'Aller Light Regular';
+  font-size: 30px;
   color: rgb(10%, 10%, 10%);
   background: darken(white, 10%);
   margin: 0;
@@ -242,7 +227,6 @@ div#menu-wrapper {
 }
 
 main {
-  font-family: "Aller" !important;
   padding-top: 150px;
 
   div {
@@ -494,6 +478,13 @@ main {
                 opacity: 1;
                 display: flex;
               }
+
+              /*
+              &:nth-child(3) {
+                width: 400px;
+                height: 200px;
+              }
+              */
 
               &:nth-child(2) {
                 border-bottom-left-radius: 10px;

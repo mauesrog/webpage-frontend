@@ -18,8 +18,12 @@ module.exports = {
       loader: 'babel',
     },
     {
-      test: /\.(eot|svg|ttf|woff|woff2)$/,
-      loader: 'file-loader?name=src/fonts/[name].[ext]',
+      test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'url-loader',
+      options: {
+        mimetype: 'application/font-woff',
+        name: './fonts/[hash].[ext]',
+      },
     },
     {
       test: /\.scss/,
@@ -30,7 +34,7 @@ module.exports = {
   },
   postcss: [autoprefixer({ browsers: ['last 2 versions'] })],
   plugins: [
-    new ExtractTextPlugin('magic.css'),
+    new ExtractTextPlugin('bundle.css'),
   ],
 
 };
