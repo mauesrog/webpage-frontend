@@ -66,7 +66,7 @@ class NavBar extends Component {
               <a href={this.props.resumeUrl || '#'} target="_blank">Resume</a>
             </li>
             <li>
-              <Link to="/">Grumpy wizards make</Link>
+              <Link to="/">Mauricio Esquivel Rogel</Link>
             </li>
           </ul>
         </div>

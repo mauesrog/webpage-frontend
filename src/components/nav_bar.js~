@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 const DARTMOUTH_SITE = 'http://dartmouth.edu/';
-const RESUME = 'https://drive.google.com/open?id=0BxSh45n-GCwfSEJVbVJiSWp1Y3M';
 
 class NavBar extends Component {
   constructor(props) {
@@ -64,10 +63,10 @@ class NavBar extends Component {
               <a href="#contact-me-placeholder">Contact me</a>
             </li>
             <li>
-              <a href={RESUME} target="_blank">Resume</a>
+              <a href={this.props.resumeUrl || '#'} target="_blank">Resume</a>
             </li>
             <li>
-              <Link to="/">Mauricio Esquivel Rogel</Link>
+              <Link to="/">Grumpy wizards make</Link>
             </li>
           </ul>
         </div>
